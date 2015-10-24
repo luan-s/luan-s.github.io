@@ -13360,7 +13360,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   overflow: hidden; }
   .fundo img {
     width: auto;
-    height: 100%;
+    height: 106%;
     animation-name: borda;
     animation-duration: 20s;
     animation-timing-function: linear;
