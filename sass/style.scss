@@ -1,0 +1,157 @@
+@import "frameworks/bootstrap";
+@import "frameworks/materialize";
+
+$element-color : #009688;
+$pane-color:  #DEDEDE;
+*{
+	padding: 0px;
+	margin:0;
+}
+
+.fundo{
+	margin-top: -50px;
+	height: 450px;
+	overflow: hidden;
+	img{
+		width:100%;
+		height: 450px;
+		&:hover{
+			height: 600px;
+		}
+
+	animation-name: borda;
+	animation-duration: 20s;
+	animation-timing-function: linear;
+	animation-direction: normal;
+	animation-iteration-count: infinite; }
+
+	@keyframes borda {
+	0% {
+		transform: scale(1,1);
+	}
+
+	50% {
+		transform: scale(1.2,1.2);
+	}
+
+	100% {
+		transform: scale(1,1);
+	}
+
+	}
+}
+
+.content{
+	width: 100%;
+	height:100%;
+	nav{
+		z-index:100;
+		position: relative;
+		border:0;
+		box-shadow:0 0 0;
+		.nav-wrapper{
+			padding-left: 200px;
+		}
+
+	}
+	.header{
+
+		z-index: 1;
+		width: 100%;
+		margin-top: -400px;
+		height: 400px;
+		
+		transition: background-size 1s linear;
+		&:hover{
+			background-size: 110%;
+		}
+	}
+
+	.photo{
+		border: 3px solid $element-color;
+		position:relative;
+		width: 100px;
+		height: 100px;
+		background: url("../../img/user.jpg") center / cover;
+		margin-top: 330px;	
+		transition: all 1.2 linear;
+
+		animation-name: rodar;
+		animation-duration: 1.5s;
+		animation-timing-function: linear;
+		animation-direction: normal;
+		animation-delay:0.5;
+		animation-iteration-count: 1; }
+
+		@keyframes rodar {
+		0% {
+			margin-left: -2000px;
+			transform: rotate(0deg);
+		}
+
+		100% {
+			transform: rotate(360deg);
+		}
+
+		}
+		
+}
+
+.title{
+	color:$element-color;
+	text-shadow: 0 0 3px $element-color;
+	font-size: 40px;
+}
+.social{
+	background-color: $pane-color;
+	padding-top:0px;
+	.social-box{
+		padding: 20px;
+		padding-top: 0px;
+		height: 300px;
+		&.border{border-right: 1px solid white;}
+		.icons{
+			font-size: 220px;
+			background: linear-gradient($element-color,darken($element-color, 10%));
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			transition: all 0.2s linear;
+			&:active{
+				background: linear-gradient(darken($element-color, 10%),$element-color);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+
+			&:hover{
+				font-size: 230px;
+			}
+		}
+	}
+}
+
+.jobs{
+	height: 400px;
+	background-color: #009688;
+}
+
+.skills{
+	transition: all 0.3s ease-in;
+	background-color: $pane-color;
+	padding:50px;
+}
+
+.photo-card{
+	height: 180px;
+	width:250px;
+	margin-bottom: 20px;
+	border-radius: 2%;
+	box-shadow:0 0 5px black;
+	transition:all 0.2s linear;
+	&:hover{
+		transform:rotate(2deg);
+	}
+}
+
+.jobs{
+
+}
