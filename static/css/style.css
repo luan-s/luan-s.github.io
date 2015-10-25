@@ -13423,7 +13423,9 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     text-shadow: 0 0 10px #009688; }
 
 .descr {
-  font-size: 30px;
+  overflow: hidden;
+  height: 200px;
+  font-size: 25px;
   color: white;
   padding-top: 50px;
   text-shadow: 0 0 10px black; }
@@ -13454,11 +13456,59 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   height: 400px;
   background-color: #009688;
   overflow: hidden; }
-  .jobs img {
-    height: 120%;
+  .jobs .quadros {
+    transition: all 0 linear;
     width: auto;
-    opacity: 0.4; }
-
+    margin: auto;
+    overflow: hidden;
+    margin-top: 50px;
+    height: 300px;
+    background-size: 300px 600px;
+    animation-name: quadro;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-iteration-count: infinite; }
+@keyframes quadro {
+  0% {
+    background: url("../../img/sass.png") center no-repeat;
+    background-size: auto 300px; }
+  8.33% {
+    background: url("../../img/sass.png") center no-repeat;
+    background-size: auto 300px; }
+  16.66% {
+    background: url("../../img/css.png") center no-repeat;
+    background-size: auto 300px; }
+  24.99% {
+    background: url("../../img/css.png") center no-repeat;
+    background-size: auto 300px; }
+  33.33% {
+    background: url("../../img/js.png") center no-repeat;
+    background-size: auto 300px; }
+  41.66% {
+    background: url("../../img/js.png") center no-repeat;
+    background-size: auto 300px; }
+  48.99% {
+    background: url("../../img/html.png") center no-repeat;
+    background-size: auto 300px; }
+  58.31% {
+    background: url("../../img/html.png") center no-repeat;
+    background-size: auto 300px; }
+  66.66% {
+    background: url("../../img/bootstrap.png") center no-repeat;
+    background-size: auto 300px; }
+  74.99% {
+    background: url("../../img/bootstrap.png") center no-repeat;
+    background-size: auto 300px; }
+  83.3% {
+    background: url("../../img/jade.png") center no-repeat;
+    background-size: auto 300px; }
+  91.66% {
+    background: url("../../img/jade.png") center no-repeat;
+    background-size: auto 300px; }
+  100% {
+    background: url("../../img/sass.png") center no-repeat;
+    background-size: auto 300px; } }
 .skills {
   transition: all 0.3s ease-in;
   background-color: #DEDEDE;
