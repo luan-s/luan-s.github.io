@@ -13383,8 +13383,6 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     position: relative;
     border: 0;
     box-shadow: 0 0 0; }
-    .content nav .nav-wrapper {
-      padding-left: 200px; }
   .content .header {
     width: 100%;
     margin-top: -400px;
@@ -13398,7 +13396,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     width: 100px;
     height: 100px;
     background: url("../../img/user.jpg") center/cover;
-    margin-top: 330px;
+    margin-top: 130px;
     transition: all 1.2 linear;
     animation-name: rodar;
     animation-duration: 1.5s;
@@ -13417,6 +13415,18 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   text-shadow: 0 0 3px #009688;
   font-size: 40px;
   transition: all 0.2s linear; }
+
+.fontNav {
+  margin-left: -25px; }
+  .fontNav:hover {
+    text-decoration: none;
+    text-shadow: 0 0 10px #009688; }
+
+.descr {
+  font-size: 30px;
+  color: white;
+  padding-top: 50px;
+  text-shadow: 0 0 10px black; }
 
 .social {
   background-color: #DEDEDE;

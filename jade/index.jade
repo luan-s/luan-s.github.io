@@ -11,18 +11,22 @@ html
 
 	body
 		.content
-			nav.transparent
+			nav.transparent.center
 				.nav-wrapper
-					a.brand-logo(href="#!") Luan Souza
+					a.brand-logo(href="#!").fontNav LS
 					ul.right.hide-on-med-and-down
 						li
-							a(href="sass.html") Social
+							a(href="sass.html").fontNav Social
 						
 
 			main.row
 				.fundo.col-md-13
 					img(src="img/fundo2.jpg" )
 				.header.center.col-md-12.transparent
+					.descr 
+						p.wow.bounceInLeft(data-wow-delay="0.3s") Meu nome é Luan Souza, tenho 20 anos, 
+						p.wow.bounceInLeft(data-wow-delay="0.8s")  sou estudante de Sistemas para Internet, 
+						p.wow.bounceInLeft(data-wow-delay="1.3s")  entusiasta de programação e desenvolvimento web.
 					a.btn-floating.col.md.12.photo.animated.bounceInLeft
 						i.material-icons
 
@@ -40,7 +44,25 @@ html
 			
 
 		section.col-md-13.jobs.row
-			img(src="img/fundo.jpg")
+			#carousel-example-generic.carousel.slide(data-ride='carousel')
+				ol.carousel-indicators
+					li.active(data-target='#carousel-example-generic', data-slide-to='0')
+					li(data-target='#carousel-example-generic', data-slide-to='1')
+					li(data-target='#carousel-example-generic', data-slide-to='2')
+				.carousel-inner(role='listbox')
+					.item.active
+						img(src='img/fundo2.jpg', alt='...')
+						.carousel-caption
+					.item
+						img(src='img/user.jpg', alt='...')
+						.carousel-caption ...
+				a.left.carousel-control(href='#carousel-example-generic', role='button', data-slide='prev')
+					span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+					span.sr-only Previous
+				a.right.carousel-control(href='#carousel-example-generic', role='button', data-slide='next')
+					span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+					span.sr-only Next
+
 		section.col-md-13.social.row
 			h1.title.col-md-13.center Social
 			span.social-box.col-md-6.col-xs-12.center.border
@@ -67,6 +89,12 @@ html
 			}
 			)
 			wow.init();
+		script(type="text/javascript").
+			$(function(){ 
+			$('.carousel').carousel(); 
+			});
+		script(src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js")
+		script(src="js/jquery-1.7.2.min.js")
 
 		
 
