@@ -4,63 +4,193 @@
     <title>Luan Souza</title>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!--link(href='https://fonts.googleapis.com/css?family=Roboto:300', rel='stylesheet', type='text/css')-->
     <link rel="stylesheet" type="text/css" href="static/css/animate.css">
-    <link rel="stylesheet" type="text/css" href="static/css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
   </head>
   <body>
     <div class="content">
-      <nav class="transparent center">
-        <div class="nav-wrapper"><a href="#!" class="brand-logo fontNav">LS</a>
-          <ul class="right hide-on-med-and-down"></ul>
+      <div class="header col-md-12">
+        <div class="info-pessoal col-md-6 col-md-offset-3">
+          <div class="foto col-md-2 col-md-offset-5"></div>
         </div>
-      </nav>
-      <main class="row">
-        <div class="fundo col-md-12"><img src="img/fundo2.jpg"></div>
-        <div class="header center col-md-12 transparent">
-          <div class="descr">
-            <p data-wow-delay="0.3s" class="wow bounceInLeft">Meu nome é Luan Souza, tenho 20 anos</p>
-            <p data-wow-delay="0.8s" class="wow bounceInLeft"> sou estudante de Sistemas para Internet</p>
-            <p data-wow-delay="1.3s" class="hidden-xs wow bounceInLeft"> entusiasta de programação e desenvolvimento web.</p>
-            <p data-wow-delay="1.3s" class="wow bounceInLeft"></p>
-          </div><a class="btn-floating col md 12 photo animated bounceInLeft"><i class="material-icons"></i></a>
+        <div class="sobre-mim col-md-10 col-md-offset-1">Olá! meu nome é<span class="nome"><strong> Luan Souza</strong></span>.
+          <div class="descricao">
+            <p>Sou entusiasta de programação e desenvolvimento web.</p><span>Estudante de<strong>Sistemas para Internet</strong></span>no Instituto Federal de Educação, Ciência e Tecnologia do Sudeste de Minas Gerais.
+          </div><span aria-hidden="true" class="glyphicon glyphicon-menu-down"></span>
         </div>
-      </main>
+      </div>
+      <div class="divisor divisor1 col-md-12"></div>
+      <div class="aboutme col-md-12 up wow slideInUp">
+        <h3 class="titulo-sobre col-md-12">Sobre mim</h3>
+        <div class="traco-content col-md-12">
+          <div class="traco border-black"></div>
+        </div>
+        <div class="about-dir col-about col-md-5 col-md-offset-1">
+          <h4 class="col-md-12">titulo</h4>
+          <p class="wow fadeInLeft">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae mi id urna luctus lacinia. Maecenas egestas in magna vel tristique. Donec non interdum diam. Nunc ac arcu orci. Morbi sed leo at justo faucibus consequat. Nullam lectus massa, facilisis eu eros non, cursus placerat nisl. Morbi euismod mi eu eros consequat, id sodales massa rhoncus. Donec vel consectetur mi, id dictum dolor. Maecenas maximus et erat nec dictum. Phasellus vulputate libero sed mauris lacinia pulvinar. In tristique lacus mauris, tincidunt elementum purus ullamcorper id. Curabitur nec quam lectus. Vestibulum sed turpis sed libero fermentum facilisis. Mauris eu purus sit amet risus hendrerit venenatis. Vestibulum in nisl felis. Praesent ultrices tincidunt elit in elementum.</p>
+        </div>
+        <div class="about-esq col-about col-md-5"><img class="book col-md-6 col-md-offset-3 wow fadeInRight"></div>
+        <div class="about-esq col-about col-md-5 col-md-offset-1"><img class="book col-md-6 col-md-offset-3 wow fadeInRight"></div>
+        <div class="about-dir col-about col-md-5">
+          <h4 class="col-md-12">titulo</h4>
+          <p class="wow fadeInLeft">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae mi id urna luctus lacinia. Maecenas egestas in magna vel tristique. Donec non interdum diam. Nunc ac arcu orci. Morbi sed leo at justo faucibus consequat. Nullam lectus massa, facilisis eu eros non, cursus placerat nisl. Morbi euismod mi eu eros consequat, id sodales massa rhoncus. Donec vel consectetur mi, id dictum dolor. Maecenas maximus et erat nec dictum. Phasellus vulputate libero sed mauris lacinia pulvinar. In tristique lacus mauris, tincidunt elementum purus ullamcorper id. Curabitur nec quam lectus. Vestibulum sed turpis sed libero fermentum facilisis. Mauris eu purus sit amet risus hendrerit venenatis. Vestibulum in nisl felis. Praesent ultrices tincidunt elit in elementum.</p>
+        </div>
+      </div>
+      <div class="divisor divisor2 col-md-12"></div>
+      <div class="skills col-md-12 border-white">
+        <h3 class="titulo-sobre col-md-12 text-center">Habilidades</h3>
+        <div class="traco-content col-md-12">
+          <div class="traco border-black"></div>
+        </div>
+        <div class="quadro-skill col-md-12 border-white">
+          <div class="skill skill-1 col-md-3 border-white text-center">
+            <h3 class="col-md-12 text-center">Html5/CSS3</h3>
+            <div class="circle border-white">
+              <div class="wave wow slideInUp">
+                <div class="wave-up wave-90 text-center border-white">
+                  <p>Avancado</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill skill-1 col-md-3 border-white">
+            <h3 class="col-md-12 text-center">JS/Jquery</h3>
+            <div class="circle border-white">
+              <div class="wave wow slideInUp">
+                <div class="wave-up wave-70 text-center border-white">
+                  <p>Intermediario</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill skill-1 col-md-3 border-white">
+            <h3 class="col-md-12 text-center"> Design Responsivo</h3>
+            <div class="circle border-white">
+              <div class="wave wow slideInUp">
+                <div class="wave-up wave-90 text-center border-white">
+                  <p>Avancado</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill skill-1 col-md-3 border-white">
+            <h3 class="col-md-12 text-center">Sass/Jade</h3>
+            <div class="circle border-white">
+              <div class="wave wow slideInUp">
+                <div class="wave-up wave-60 text-center border-white">
+                  <p>Intermediario</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill skill-1 col-md-3 border-white">
+            <h3 class="col-md-12 text-center">Twitter bootstrap</h3>
+            <div class="circle border-white">
+              <div class="wave wow slideInUp">
+                <div class="wave-up wave-80 text-center border-white">
+                  <p>Avancado</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill skill-1 col-md-3 border-white">
+            <h3 class="col-md-12 text-center">Python</h3>
+            <div class="circle border-white">
+              <div class="wave wow slideInUp">
+                <div class="wave-up wave-70 text-center border-white">
+                  <p>Intermediario</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill skill-1 col-md-3 border-white">
+            <h3 class="col-md-12 text-center">Git</h3>
+            <div class="circle border-white">
+              <div class="wave wow slideInUp">
+                <div class="wave-up wave-70 text-center border-white">
+                  <p>Intermediario</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skill skill-1 col-md-3 border-white">
+            <h3 class="col-md-12 text-center">Android</h3>
+            <div class="circle border-white">
+              <div class="wave wow slideInUp">
+                <div class="wave-up wave-40 text-center border-white">
+                  <p>Iniciante</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divisor divisor3 col-md-12"></div>
+      <div class="desenvolvimento col-md-12 border-black">
+        <h3 class="titulo-sobre col-md-12 text-center">Algumas tecnologias usadas</h3>
+        <div class="traco-content col-md-12">
+          <div class="traco border-black"></div>
+        </div>
+        <div class="desenvolvimento1 col-md-6 border-black">
+          <div class="titulo-tecnologias col-md-12 text-center">
+            <h4 class="col-md-12 text-center">Algumas tecnologias usadas</h4>
+            <div class="traco-content col-md-12">
+              <div class="traco border-black"></div>
+            </div>
+          </div>
+          <div class="desenvolvimento-texto col-md-12 border-black">
+            <p class="border-black text-center">SASS / SCSS é uma plataforma pra desenvolver CSS de forma mais proveitosa e produtiva, podendo dividir em vários arquivos .scss e formando um único .css, possibilitando várias pessoas trabalharem no mesmo CSS de um projeto.</p>
+          </div>
+          <div class="desenvolvimento-radios col-md-12 text-center border-black">
+            <input id="radio-sass" type="radio" name="tecnologia" class="radios">
+            <input id="radio-css" type="radio" name="tecnologia" class="radios">
+            <input id="radio-jade" type="radio" name="tecnologia" class="radios">
+            <input id="radio-js" type="radio" name="tecnologia" class="radios">
+            <input id="radio-html" type="radio" name="tecnologia" class="radios">
+          </div>
+        </div>
+        <div class="desenvolvimento2 col-md-6 border-black">
+          <div class="titulo-tecnologias col-md-12 text-center"></div>
+          <div class="tecnologias2 col-md-12 border-black">
+            <div class="area-3d">
+              <div class="cubo-3d">
+                <div class="face-3d cubo-frente"></div>      
+                <div class="face-3d cubo-cima"></div>      
+                <div class="face-3d cubo-baixo"></div>      
+                <div class="face-3d cubo-esquerda"></div>      
+                <div class="face-3d cubo-direita"></div>      
+                <div class="face-3d cubo-costas"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divisor divisor4 col-md-12"></div>
+      <div class="contato col-md-12">
+        <h3 class="titulo-sobre col-md-12 text-center">Entre em contato</h3>
+        <div class="traco-content col-md-12">
+          <div class="traco border-black"></div>
+        </div>
+      </div>
     </div>
-    <section class="center col-md-12 skills row">
-      <h1 id="trab" class="title col-md-12 center">Trabalhos</h1>
-      <div class="jobs-box col-md-6 col-xs-12 center col-lg-3 border wow flipInX"><img src="img/lbook.png" class="photo-card"></div>
-      <div class="jobs-box col-md-6 col-xs-12 col-lg-3 center wow flipInX"><img src="img/table.png" class="photo-card"></div>
-      <div class="jobs-box col-md-6 col-xs-12 col-lg-3 center border wow flipInX"><img src="img/lphotos.png" class="photo-card"></div>
-      <div class="jobs-box col-md-6 col-xs-12 col-lg-3 center wow flipInX"><img src="img/loading.png" class="photo-card"></div>
-    </section>
-    <section class="col-md-12 jobs row center">
-      <div class="des col-md-12">Desenvolvimento em:</div>
-      <div class="quadros"></div>
-    </section>
-    <section class="col-md-12 social row">
-      <h1 class="title col-md-12 center">Social</h1><span class="social-box col-md-6 col-xs-12 center border"><i class="fa fa-facebook-square icons wow flipInX"></i></span><span class="social-box col-md-6 col-xs-12 center"><i class="fa fa-instagram icons wow flipInX"></i></span><span class="social-box col-md-6 col-xs-12 center border"><i class="fa fa-google-plus-square icons wow flipInX"></i></span><span class="social-box col-md-6 col-xs-12 center"><i class="fa fa-whatsapp icons wow flipInX"></i></span>
-    </section>
-    <script type="text/javascript" src="static/js/script.js"></script>
-    <script type="text/javascript" src="static/js/wow.min.js"></script>
+    <script type="text/javascript" src="static/framesjs/wow.min.js"></script>
     <script>
       wow = new WOW(
       {
       	boxClass:     'wow',      // default
       	animateClass: 'animated', // default
-      	offset:       100,          // default
+      	offset:       100,        // default
       	mobile:       true,       // default
       	live:         true        // default
       }
       )
       wow.init();
     </script>
-    <script type="text/javascript">
-      $(function(){ 
-      $('.carousel').carousel(); 
-      });
-    </script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="static/js/typed.min.js"></script>
+    <script type="text/javascript" src="static/js/main.js"></script>
   </body>
 </html>
