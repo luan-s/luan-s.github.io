@@ -39,14 +39,11 @@ body {
 }
 
 .border-white {
-    /*border: 1px white solid;*/
 }
 
 .header {
-    height: 88vh;
     background-color: $bg2-color;
-    z-index: 0;
-
+    z-index: 100;
     .sobre-mim {
         font-family: 'Raleway', sans-serif;
         text-align: center;
@@ -77,6 +74,8 @@ body {
         .foto {
             /* border: 1px white solid;*/
             height: 100px;
+            width: 100px;
+            margin: 0 auto;
             border-radius: 100%;
             background-image: url("../../img/user.jpg");
         }
@@ -93,6 +92,7 @@ body {
 }
 
 .divisor1 {
+  z-index: 0;
     background-color: $bg2-color;
     transform: rotate(3.5deg) translateY(-42%) scale(2,1);
     box-shadow: 0 1px 1px $bg2-color;
@@ -108,7 +108,7 @@ body {
 .divisor3 {
   background-color: $bg2-color;
   transform: rotate(-3.5deg) translateY(-42%) scale(2,1);
-  z-index: 100;
+  z-index:  0;
 }
 
 .divisor4 {
@@ -145,7 +145,9 @@ z-index: 0;
 }
 
 .book {
-    height: 100%;
+  margin: 0 auto;
+    height: 256px;
+    width: 256px;
     background-image: url("../../img/books.png");
     background-repeat: no-repeat;
     img{
@@ -242,7 +244,6 @@ z-index: 0;
   width:200px;
   border: 2px solid white;
   border-top: 2px solid $bg2-color;
-  margin:0 45px;
   border-radius: 50%;
   overflow:hidden;
   box-shadow: 0 4px 5px -2px white;
@@ -250,9 +251,10 @@ z-index: 0;
   transform: rotate(0deg);
   transition: all 0.05s linear;
 
-  &:hover{
-    transform: rotate(2deg);
-  }
+  position: relative;
+  left:50%;
+  transform: translateX(-50%);
+
 }
 
 @for $i from 10 through 100{
@@ -284,11 +286,16 @@ z-index: 0;
   $i: $i + 10;
 }
 
-
 .traco{
   width: 100px;
   margin: 0 auto;
   border: 1px solid $element-color;
+}
+
+.traco-preto{
+  width: 100px;
+  margin: 0 auto;
+  border: 1px solid $bg2-color;
 }
 
 .wave{
@@ -487,5 +494,37 @@ z-index: 0;
 @keyframes muda-texto:after {
     0% {content: "luan"}
     100% {content: "souza"}
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+  $largura-cubo: 100px;
+  $altura-cubo: 100px;
+  $cubeDepth: $altura-cubo;
+    .about-esq {
+        margin-top: 50px;
+    }
+
+    .skill{
+      margin-bottom: 100px;
+      height: 300px;
+    }
+
+
+    .desenvolvimento-texto{
+      overflow: auto;
+    }
+
+    .divisor3{
+        transform: rotate(-3deg) translateY(-70%) scale(2,1);
+    }
+
+    .area-3d{
+      margin-top: 0;
+      transform: scale(0.5,0.5);
+    }
 
 }

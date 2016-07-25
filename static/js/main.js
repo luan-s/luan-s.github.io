@@ -69,7 +69,4 @@ $(document).ready(function(){
 inicio =  function(){
   $(".area-3d .cubo-3d").css("transform","rotateX(-90deg)");
   $(".titulo-tecnologias h4").text("SASS");
-  $(".desenvolvimento-texto p").text(textoSass);
 }
-
-  $(".desenvolvimento-texto p").text(textoSass);
