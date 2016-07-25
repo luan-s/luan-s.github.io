@@ -74,7 +74,7 @@ body {
 .divisor4 {
   z-index: 0;
   background-color: #111111;
-  transform: rotate(3deg) translateY(42%) scale(2, 1);
+  transform: rotate(3deg) translateY(-42%) scale(2, 1);
   box-shadow: 0 1px 1px #111111; }
 
 .aboutme {
@@ -134,10 +134,19 @@ body {
       transform: translateY(-50%); }
 
 .contato {
+  transform: translateY(-27%);
   color: white;
   z-index: 100;
   background-color: #111111;
-  height: 300px; }
+  height: 300px;
+  font-size: 30px; }
+  .contato .social {
+    margin-top: 40px; }
+  .contato .fa {
+    margin: 0 10px;
+    font-size: 60px; }
+    .contato .fa:hover {
+      color: #13B87C; }
 
 .radios:not(old) {
   height: 16px;

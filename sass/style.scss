@@ -114,7 +114,7 @@ body {
 .divisor4 {
 z-index: 0;
   background-color: $bg2-color;
-  transform: rotate(3deg) translateY(42%) scale(2,1);
+  transform: rotate(3deg) translateY(-42%) scale(2,1);
   box-shadow: 0 1px 1px $bg2-color;
 }
 
@@ -209,10 +209,22 @@ z-index: 0;
 }
 
 .contato{
+  transform: translateY(-27%);
   color: white;
   z-index: 100;
   background-color: $bg2-color;
   height: 300px;
+  font-size: 30px;
+  .social{
+    margin-top: 40px;
+  }
+  .fa{
+    margin: 0 10px;
+    font-size: 60px;
+    &:hover{
+      color:$element-color;
+    }
+  }
 }
 
 .radios:not(old){
